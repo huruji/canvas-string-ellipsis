@@ -1,6 +1,6 @@
 {
   "name": "canvas-string-ellipsis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "通过 canvas 测量文字长度，超过长度则使用省略号",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
