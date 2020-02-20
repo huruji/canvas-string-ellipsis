@@ -1,6 +1,7 @@
-export function fixedWidthEllipsis(str: string, maxWidth: number, font = "14px sans-serif"): [string, boolean, number] {
+export default function fixedWidthEllipsis(str: string, maxWidth: number, font = "14px sans-serif"): [string, boolean, number] {
   const canvasEle = document.createElement("canvas");
   const ctx = canvasEle.getContext("2d");
+  ctx.font = font;
   let width = ctx.measureText(str).width;
   const ellipsis = "...";
   const ellipsisWidth = ctx.measureText(ellipsis).width;
